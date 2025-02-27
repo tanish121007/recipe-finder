@@ -16,7 +16,7 @@ async function searchRecipes() {
     }
 
     try {
-        const response = await fetch(`https://api.edamam.com/search?q=${searchValue}&app_id=7aa518a5&app_key=dc8364724fb78ab11aa39850409e07ce&from=0&to=10`);
+        const response = await fetch(`https://www.themealdb.com/api.php${searchValue}&app_id=7aa518a5&app_key=dc8364724fb78ab11aa39850409e07ce&from=0&to=10`);
         
         if (!response.ok) {
             throw new Error("Failed to fetch recipes");
